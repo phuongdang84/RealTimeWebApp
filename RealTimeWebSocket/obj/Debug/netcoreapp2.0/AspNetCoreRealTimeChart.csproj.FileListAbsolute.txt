@@ -1,0 +1,11 @@
+D:\Github\SAMPLE\AspNetCoreRealTimeChart-master\AspNetCoreRealTimeChart\bin\Debug\netcoreapp2.0\AspNetCoreRealTimeChart.deps.json
+D:\Github\SAMPLE\AspNetCoreRealTimeChart-master\AspNetCoreRealTimeChart\bin\Debug\netcoreapp2.0\AspNetCoreRealTimeChart.runtimeconfig.json
+D:\Github\SAMPLE\AspNetCoreRealTimeChart-master\AspNetCoreRealTimeChart\bin\Debug\netcoreapp2.0\AspNetCoreRealTimeChart.runtimeconfig.dev.json
+D:\Github\SAMPLE\AspNetCoreRealTimeChart-master\AspNetCoreRealTimeChart\bin\Debug\netcoreapp2.0\AspNetCoreRealTimeChart.dll
+D:\Github\SAMPLE\AspNetCoreRealTimeChart-master\AspNetCoreRealTimeChart\bin\Debug\netcoreapp2.0\AspNetCoreRealTimeChart.pdb
+D:\Github\SAMPLE\AspNetCoreRealTimeChart-master\AspNetCoreRealTimeChart\obj\Debug\netcoreapp2.0\AspNetCoreRealTimeChart.csproj.CoreCompileInputs.cache
+D:\Github\SAMPLE\AspNetCoreRealTimeChart-master\AspNetCoreRealTimeChart\obj\Debug\netcoreapp2.0\AspNetCoreRealTimeChart.AssemblyInfoInputs.cache
+D:\Github\SAMPLE\AspNetCoreRealTimeChart-master\AspNetCoreRealTimeChart\obj\Debug\netcoreapp2.0\AspNetCoreRealTimeChart.AssemblyInfo.cs
+D:\Github\SAMPLE\AspNetCoreRealTimeChart-master\AspNetCoreRealTimeChart\obj\Debug\netcoreapp2.0\AspNetCoreRealTimeChart.dll
+D:\Github\SAMPLE\AspNetCoreRealTimeChart-master\AspNetCoreRealTimeChart\obj\Debug\netcoreapp2.0\AspNetCoreRealTimeChart.pdb
+D:\Github\SAMPLE\AspNetCoreRealTimeChart-master\AspNetCoreRealTimeChart\obj\Debug\netcoreapp2.0\AspNetCoreRealTimeChart.csprojAssemblyReference.cache

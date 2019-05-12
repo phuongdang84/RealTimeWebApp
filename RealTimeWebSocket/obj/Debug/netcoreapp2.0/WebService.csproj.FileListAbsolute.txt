@@ -1,0 +1,11 @@
+D:\Github\COMP1108\RealTimeWebApp\RealTimeWebSocket\bin\Debug\netcoreapp2.0\WebService.deps.json
+D:\Github\COMP1108\RealTimeWebApp\RealTimeWebSocket\bin\Debug\netcoreapp2.0\WebService.runtimeconfig.json
+D:\Github\COMP1108\RealTimeWebApp\RealTimeWebSocket\bin\Debug\netcoreapp2.0\WebService.runtimeconfig.dev.json
+D:\Github\COMP1108\RealTimeWebApp\RealTimeWebSocket\bin\Debug\netcoreapp2.0\WebService.dll
+D:\Github\COMP1108\RealTimeWebApp\RealTimeWebSocket\bin\Debug\netcoreapp2.0\WebService.pdb
+D:\Github\COMP1108\RealTimeWebApp\RealTimeWebSocket\obj\Debug\netcoreapp2.0\WebService.csproj.CoreCompileInputs.cache
+D:\Github\COMP1108\RealTimeWebApp\RealTimeWebSocket\obj\Debug\netcoreapp2.0\WebService.AssemblyInfoInputs.cache
+D:\Github\COMP1108\RealTimeWebApp\RealTimeWebSocket\obj\Debug\netcoreapp2.0\WebService.AssemblyInfo.cs
+D:\Github\COMP1108\RealTimeWebApp\RealTimeWebSocket\obj\Debug\netcoreapp2.0\WebService.dll
+D:\Github\COMP1108\RealTimeWebApp\RealTimeWebSocket\obj\Debug\netcoreapp2.0\WebService.pdb
+D:\Github\COMP1108\RealTimeWebApp\RealTimeWebSocket\obj\Debug\netcoreapp2.0\WebService.csprojAssemblyReference.cache
