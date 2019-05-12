@@ -8,4 +8,3 @@ D:\Github\COMP1108\RealTimeWebApp\RealTimeWebSocket\obj\Debug\netcoreapp2.0\WebS
 D:\Github\COMP1108\RealTimeWebApp\RealTimeWebSocket\obj\Debug\netcoreapp2.0\WebService.AssemblyInfo.cs
 D:\Github\COMP1108\RealTimeWebApp\RealTimeWebSocket\obj\Debug\netcoreapp2.0\WebService.dll
 D:\Github\COMP1108\RealTimeWebApp\RealTimeWebSocket\obj\Debug\netcoreapp2.0\WebService.pdb
-D:\Github\COMP1108\RealTimeWebApp\RealTimeWebSocket\obj\Debug\netcoreapp2.0\WebService.csprojAssemblyReference.cache

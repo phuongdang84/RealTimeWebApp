@@ -1,0 +1,10 @@
+D:\Github\COMP1108\RealTimeWebApp\Application\bin\Debug\netcoreapp2.0\Application.deps.json
+D:\Github\COMP1108\RealTimeWebApp\Application\bin\Debug\netcoreapp2.0\Application.runtimeconfig.json
+D:\Github\COMP1108\RealTimeWebApp\Application\bin\Debug\netcoreapp2.0\Application.runtimeconfig.dev.json
+D:\Github\COMP1108\RealTimeWebApp\Application\bin\Debug\netcoreapp2.0\Application.dll
+D:\Github\COMP1108\RealTimeWebApp\Application\bin\Debug\netcoreapp2.0\Application.pdb
+D:\Github\COMP1108\RealTimeWebApp\Application\obj\Debug\netcoreapp2.0\Application.csproj.CoreCompileInputs.cache
+D:\Github\COMP1108\RealTimeWebApp\Application\obj\Debug\netcoreapp2.0\Application.AssemblyInfoInputs.cache
+D:\Github\COMP1108\RealTimeWebApp\Application\obj\Debug\netcoreapp2.0\Application.AssemblyInfo.cs
+D:\Github\COMP1108\RealTimeWebApp\Application\obj\Debug\netcoreapp2.0\Application.dll
+D:\Github\COMP1108\RealTimeWebApp\Application\obj\Debug\netcoreapp2.0\Application.pdb

@@ -1,0 +1,908 @@
+@font-face {
+    font-family: GEOMANIST-LIGHT;
+    src: url(../lib/fonts/GEOMANIST-LIGHT.OTF);
+}
+
+@font-face {
+    font-family: GEOMANIST-REGULAR;
+    src: url(../lib/fonts/GEOMANIST-REGULAR.OTF);
+}
+
+a.btn input[type=button], button, select {
+    box-shadow: inset 0.05em 0.25em 0.9em inherit;
+    -webkit-box-shadow: inset 0.05em 0.25em 0.9em inherit;
+}
+
+a::selection, a:focus, a::after {
+    transition: ease-out 0.1s;
+    color: #ff4800;
+}
+
+input[type=button]:focus, button:focus, select:focus, input[type=button]::after, button::after, select::after {
+    outline: 0 !important;
+}
+
+body {
+    -webkit-touch-callout: none;
+    /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;
+    /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;
+    /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color:#074C00;
+    background-image:linear-gradient(bottom, #074C00, #6ed46e, #3eb0f7);
+    background-image:-webkit-linear-gradient(bottom,  #074C00, #6ed46e, #3eb0f7);
+    background-image:-ms-linear-gradient(bottom, #074C00, #6ed46e, #3eb0f7);
+    background-attachment: fixed;
+    font-family: 'GEOMANIST-REGULAR', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+/* Portrait layout (default) */
+
+.bar {
+    position: relative;
+    margin: 0 0 5px 0;
+    height: 60px;
+}
+
+.bar .title {
+    position: absolute;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'GEOMANIST-LIGHT';
+    top: 10px !important;
+    margin-left: 10px;
+    padding: 0px;
+    overflow: visible;
+    text-align: left !important;
+}
+
+.bar .button-content {
+    top: 5px !important;
+    font-size: 15px;
+    line-height: 40px;
+    height: 50px;
+    color: #8f8f8f;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.bar .button-content span{
+    height: 40px;
+    vertical-align: middle;
+    margin-top: 15px;
+    font-size: 17px; 
+}
+
+.pull-left {
+    position: absolute;
+    float: left;
+    left: 5px;
+}
+
+.pull-right {
+    position: absolute;
+    float: right;
+    right: 5px;
+}
+
+.bar .button-content .button.button-clear {
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    border: 1px;
+    font-size: 20px;
+    color: #00FFFF;
+}
+
+.bar .button-content .button.button-clear:last-child {
+    margin: 0 0 10px 0;
+}
+
+.bar .button-content .button .icon {
+    height: 40px;
+    width: 40px;
+}
+
+.main-container {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 60px);
+    min-height: 150px;
+    margin: 60px 0px 0px 0px;
+    bottom: 0;
+    font-family: 'GEOMANIST-REGULAR';
+    text-align: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.main-container .head-content {
+    width: 100%;
+    padding: 15px 10px;
+    /* margin: 0 0 15px 0; */
+    text-align: center;
+    border-bottom: 1px solid #8d8d8d;
+}
+
+.main-container .head-content a.button {
+    display: block;
+    height: 20px;
+    width: 20px;
+    background: #1a2333;
+    padding: 2px;
+    text-align: center;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 35px
+}
+
+.main-container .head-content .search-bar {
+    display: flex;
+    right: 0px;
+}
+
+.main-container .head-content .search-bar input {
+    position: relative;
+    background-color: #ffffff;
+    padding: 2px 2px 2px 10px;
+    height: 45px;
+    width: 100%;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.main-container .head-content .search-bar .btn-search {
+    position: relative;
+    background-color: #5c5c5c;
+    height: 45px;
+    padding: 5px 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    border: 1px solid #fff;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.main-container .head-content .search-bar .btn-search .icon {
+    margin: 5px;
+    height: 20px;
+    width: 20px;
+}
+
+form .main-container {
+    position: relative;
+    width: calc(100% - 30px);
+    margin: 50px 15px 0px 15px;
+    text-align: center;
+    overflow-y: scroll
+}
+
+.main-container .top-content, .main-container .main-content, .main-container .bottom-content, .main-container .header-content, .main-container .footer-content {
+    width: 100%;
+    justify-content: center;
+}
+
+/*************Header content**************/
+
+.main-container .header-content {
+    display: inline-flex;
+    justify-content: space-between;
+    /*background-color: #575757;*/
+    background-color: transparent;
+    width: 100%;
+    margin-top: 1%;
+    padding: 7px 30px; 
+}
+
+.main-container .header-content .header-info {
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+    width: 30%;
+    font-size: 15px;
+}
+
+.main-container .header-content .header-info span.temperator-info{
+    font-size: 50px;
+}
+
+.main-container .header-content .header-info .icon {
+    width: 25px;
+    height: 25px;
+    margin-top: 3px;
+}
+
+.main-container .header-content .header-info .icon.temperator {  
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.main-container .header-content .header-info .icon.heart {
+    animation: beat .25s infinite alternate;
+    transform-origin: center;
+}
+
+/* Heart beat animation */
+
+@keyframes beat {
+    to {
+        transform: scale(1.2);
+    }
+}
+
+.main-container .header-content .header-info .icon-large {
+    display: block;
+    margin-left: 25%;
+    width: 30px;
+    justify-content: center;
+    text-align: center;
+}
+
+.main-container .header-content .header-info .icon-large canvas {
+    position: relative;
+    left: 30%;
+}
+
+.main-container .header-content .header-info .icon-large p {
+    left: 63%;
+    color: #ffffff;
+    font-family: 'GEOMANIST-LIGHT' !important;
+}
+
+.main-container .header-content .header-info .label {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 13px;
+    color: #ffffff;
+    margin: 0;
+}
+
+/*************Footer content**************/
+
+.main-container .footer-content {
+    position: fixed;
+    display: inline-flex;
+    background-color: #ffffff;
+    height: 45px;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    justify-content: center;
+    vertical-align: center;
+}
+
+.main-container .footer-content .btn-voice {
+    width: 30px;
+    height: 30px;
+    margin: 5px 5px 0 0;
+    padding: 2px;
+    background: transparent;
+    border: none;
+    border-radius: 50%;
+}
+
+.main-container .footer-content .btn-voice .icon {
+    width: 30px;
+    height: 30px;
+    opacity: 0.7;
+}
+
+.main-container .footer-content .text-content {
+    margin: 5px 5px 5px 0;
+    text-align: left;
+    padding: 2px;
+}
+
+.main-container .footer-content .text-content p {
+    margin: 0;
+    color: #8f8f8f;
+    font-size: 12px;
+    line-height: 16px
+}
+
+.main-container .footer-content .text-content p.title {
+    font-size: 15px;
+    color: #000;
+}
+
+/*************Main content**************/
+
+.main-container .main-content {
+    display: inline-block;
+    bottom: 0;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    vertical-align: center;
+}
+
+.main-container .main-content canvas#canvas {
+    position: relative;
+    background-color: #ffffff;
+    top: 0px;
+    left: 0px;
+    margin: 10px 0;
+    width: 100%;
+    height: 200px;
+}
+
+.main-container .main-content canvas#barChart{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 200px;
+    background-color: #ffffff;
+  /*   Check out the fancy shadow  on this one */
+    box-shadow: 0 3rem 5rem -2rem rgba(0, 0, 0, 0.6);
+  }
+
+.main-container .main-content button#buttons {
+    position: absolute;
+    bottom: 2px;
+    left: 2px;
+    width: calc(100% - 6px);
+    height: 20px;
+    padding: 2px;
+}
+
+.main-container .main-content .circleChart {
+    display: block;
+    width: 100%; 
+    margin: 0 calc(50% - 125px);
+    margin-bottom: 200px;
+    justify-content: center;
+    text-align: center;
+    left: 0;
+}
+
+.main-container .main-content .circleChart canvas {
+    left: 0;    
+}
+
+.main-container .main-content .circleChart p {
+    width: 250px !important;
+    top: 100px !important;
+    left: 0;
+    color: #ffffff;
+    font-size: 65px;
+    font-weight: 600;
+    line-height: 50px !important;
+    font-family: 'GEOMANIST-LIGHT' !important;
+}
+
+.main-container .main-content .circleChart p.sub-title{ 
+    color: #dbdbdb;
+    font-size: 20px;
+    margin-top: -20px;
+}
+
+.main-container .main-content .circleChart p.alarm,
+.main-container .main-content .circleChart p.sub-title.alarm{ 
+    color: #fd2525;
+}
+
+.main-container .main-content .circleChart p.warning,
+.main-container .main-content .circleChart p.sub-title.warning{ 
+    color: #fd7c26;
+}
+
+.main-container .main-content .circleChart p.avarage,
+.main-container .main-content .circleChart p.sub-title.average{ 
+    color: #53e5ff;
+}
+
+.main-container .main-content .circleChart p.high,
+.main-container .main-content .circleChart p.sub-title.high{ 
+    color: #00FFFF; 
+}
+
+
+.main-container .main-content .circleChart .icon {
+    position: relative;
+    height: 65px;
+    width: 70px;  
+    z-index: 99; 
+}
+
+
+    .main-container .main-content .buttons {
+        position: absolute;
+        bottom: 5px;
+        display: flex;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+.main-container .main-content .buttons .button-content{
+    position: relative;
+    display: block;
+    width: 100%; 
+    text-align: center;
+    justify-content: center; 
+}
+
+.main-container .main-content .buttons .button-content button{
+    background-color: transparent;
+    width: 80px;
+    height: 80px;
+    padding: 7px 5px 5px 5px;
+    border: 1px solid #00FFFF;
+    border-radius: 50%;
+}
+
+.main-container .main-content .buttons .button-content button img{
+    width: 40px;
+    height: 40px; 
+}
+
+.main-container .main-content .buttons .button-content p{
+    font-size: 20px;
+    margin: 5px;
+    color: #cbcbcb;
+}
+
+
+/*************Top content**************/
+
+.main-container .userinfo-content {
+    background-color: transparent;
+    display: block;
+    height: 50%;
+    width: 100%;
+}
+
+.main-container .user-info-content img.avatar {
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: calc(50% - 100px);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.main-container .user-info-content .avatar-label {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 25px;
+    margin: 10px 30px;
+}
+
+.main-container .user-info-content .avatar-title {
+    color: #a7a7a7;
+    font-size: 15px;
+    line-height: 20px;
+    margin: 0 30px;
+}
+
+/*************Bottom content**************/
+
+.main-container .bottom-content {
+    position: fixed;
+    display: inline-flex;
+    background-color: #ffffff;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    justify-content: center;
+    vertical-align: center;
+}
+
+.main-container .bottom-content div.table {
+    height: 100%;
+}
+
+.main-container .bottom-content div.table div.table-row {
+    height: 60px;
+}
+
+/*************Device history button**************/
+
+.main-container .bottom-content-button {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: left;
+}
+
+.main-container .bottom-content-button .btn-bottom {
+    display: block;
+    height: 150px;
+    width: 150px;
+    margin: 0 0 -75px -75px;
+    background: #353535;
+    border: solid 2px #00FFFF;
+    border-radius: 50%;
+    padding: 0 0 50px 50px
+}
+
+.main-container .bottom-content-button .btn-bottom img {
+    height: 30px;
+    width: 30px;
+}
+
+canvas {
+    border: 1px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -320px;
+    margin-top: -320px;
+}
+
+.input-content {
+    text-align: center;
+    margin: 5px 5px 15px 5px;
+}
+
+.input-content label {
+    width: 100%;
+    text-align: left;
+    padding: 0px;
+    margin: 0px;
+}
+
+.input-content p.input-error {
+    float: left;
+    margin: 5px 2px 10px 2px;
+    color: rgb(255, 153, 0);
+    font-size: 12px;
+    line-height: 15px
+}
+
+.input-content input.input-text, .input-content select.select-text, .input-content textarea.input-text {
+    width: 100%;
+    height: 40px;
+    padding: 5px 5px 5px 10px;
+    margin: 0;
+    border-radius: 3px;
+    border: none;
+}
+
+.input-content input[type=button], .input-content button.button-insert {
+    height: 50px;
+    width: calc(100% - 20px);
+    margin: 15px 5px 5px;
+    padding: 5px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.input-content h3 {
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 10px 0;
+    overflow: visible;
+    padding: 0px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.input-content a {
+    font-size: 15px;
+    font-weight: normal;
+    color: #fff;
+    margin: 0;
+    overflow: visible;
+    padding: 0px;
+    text-align: center;
+}
+
+/*table content*/
+
+div.table {
+    width: calc(100% - 0px);
+    /*display: table;*/
+    padding: 0;
+    margin: 0;
+    overflow-y: scroll;
+}
+
+div.table .table-body {
+    width: 100%;
+}
+
+div.table div.table-row {
+    display: inline-table;
+    width: 100%;
+    height: 70px;
+    padding: 5px;
+}
+
+/*
+div.table div.table-row:first-child {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+div.table div.table-row:last-child {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+*/
+
+div.table div.table-row a.table-row-btn {
+    display: block;
+    text-decoration: none;
+}
+
+div.table div.table-row div.th {
+    display: table-cell;
+    background: #b9b9b9;
+    padding: 7px 13px;
+    color: #fff;
+}
+
+div.table div.table-row div.td {
+    display: table-cell;
+    padding: 0px;
+}
+
+div.table div.table-row div.td.col-1 {
+    text-align: left;
+    padding: 5px 10px;
+}
+
+div.table div.table-row .col-1 .row-title span.title {
+    font-size: 22px;
+    color: #000;
+}
+
+div.table div.table-row .col-1 .row-title span.label.title {
+    font-size: 15px;
+    color: #828282
+}
+
+div.table div.table-row .col-1 .row-title .icon-date {
+    margin-left: 15px;
+    font-size: 15px;
+    color: #a1a1a1;
+}
+
+div.table div.table-row .col-1 .row-title .sub-title {
+    margin-left: 5px;
+    font-size: 15px;
+    font-style: italic;
+    color: #a1a1a1;
+}
+
+div.table div.table-row .col-1 .row-info {
+    margin-top: 10px;
+    font-size: 15px;
+    color: #a1a1a1;
+}
+
+div.table div.table-row .col-1 .row-info-1 {
+    margin-top: 0px;
+    font-size: 13px;
+    color: #a1a1a1;
+}
+
+div.table div.table-row .col-1 .row-info span, div.table div.table-row .col-1 .row-info-1 span {
+    padding-right: 10px;
+    margin-right: 5px;
+    border-right: 1px solid #a1a1a1;
+}
+
+div.table div.table-row .col-1 .row-info span:last-child, div.table div.table-row .col-1 .row-info-1 span:last-child {
+    border: none;
+}
+
+div.table div.table-row div.td.col-2 {
+    vertical-align: middle;
+    text-align: right;
+    padding: 0;
+}
+
+div.table div.table-row .col-2 .btn-delete {
+    position: relative;
+    background: transparent;
+    float: right;
+    text-align: center;
+    right: 0px;
+    padding: 5px;
+    height: 100%;
+    width: 60px;
+    color: #ff3d3d;
+    font-size: 13px;
+    border: none;
+    border-left: 1px solid #dadada;
+}
+
+div.table div.table-row .col-2 .btn-detail {
+    position: relative;
+    display: block;
+    float: right;
+    text-align: right;
+    right: 20px;
+    padding: 15px 5px;
+    height: 50px;
+    width: 50px;
+    color: #c7c7c7;
+    font-size: 20px;
+    text-decoration: none;
+    border-left: 1.5px solid #cfcfcf;
+}
+
+div.table div.table-row .col-2 .btn-delete img {
+    position: relative;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%
+}
+
+div.table div.table-row .col-2 .row-title {
+    margin-right: 5px;
+}
+
+div.table div.table-body div.table-row {
+    background: #eeeeee;
+}
+
+div.table div.table-body div.table-row:nth-child(2n+1) {
+    background: #ffffff;
+}
+
+div.table div.table-row.header {
+    display: table-header-group;
+}
+
+/* Landscape layout (with min-width) */
+
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+    .app {
+        background-position: left center;
+        padding: 75px 0px 75px 170px;
+        /* padding-top + padding-bottom + text area = image height */
+        margin: -90px 0px 0px -198px;
+        /* offset vertical: half of image height */
+        /* offset horizontal: half of image width and text area width */
+    }
+}
+
+@media (max-height: 1908px) {
+    div.table, .main-container {
+        height: 1818px;
+    }
+}
+
+@media (max-height: 1367px) {
+    div.table, .main-container {
+        height: 1277px;
+    }
+}
+
+@media (max-height: 1200px) {
+    div.table, .main-container {
+        height: 1110px;
+    }
+}
+
+@media (max-height: 1152px) {
+    div.table, .main-container {
+        height: 1062px;
+    }
+}
+
+@media (max-height: 1080px) {
+    div.table, .main-container {
+        height: 990px;
+    }
+}
+
+@media (max-height: 1025px) {
+    div.table, .main-container {
+        height: 935px;
+    }
+}
+
+@media (max-height: 824px) {
+    div.table, .main-container {
+        height: 734px;
+    }
+}
+
+@media (max-height: 812px) {
+    div.table, .main-container {
+        height: 722px;
+    }
+}
+
+@media (max-height: 736px) {
+    div.table, .main-container {
+        height: 646px;
+    }
+}
+
+@media (max-height: 731px) {
+    div.table, .main-container {
+        height: 641px;
+    }
+}
+
+@media (max-height: 668px) {
+    div.table, .main-container {
+        height: 578px;
+    }
+}
+
+@media (max-height: 640px) {
+    div.table, .main-container {
+        height: 550px;
+    }
+}
+
+@media (max-height: 568px) {
+    div.table, .main-container {
+        height: 458px;
+    }
+}
+
+@media (max-height: 412px) {
+    div.table, .main-container {
+        height: 313px;
+    }
+}
+
+@media (max-height: 360px) {
+    div.table, .main-container {
+        height: 250px;
+    }
+}
+
+@media (max-height: 330px) {
+    div.table, .main-container {
+        height: 220px;
+    }
+}
+
+@media(max-height:568px) {
+    div.table div.table-row {
+        height: 50px;
+    }
+    .main-container .top-content img.avatar {
+        margin-top: 5px;
+    }
+    .main-container .info-content p {
+        margin-top: 5px;
+    }
+}
+
+@media(max-height:320px) {
+    .main-container .info-content {
+        margin-top: 1px;
+        height: 60px;
+        width: 100%;
+    }
+    .main-container .top-content img.avatar {
+        position: absolute;
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        top: -60%;
+    }
+    .main-container .user-info-content .avatar-label {
+        margin: 0px 30px;
+    }
+    .main-container .user-info-content p {
+        margin-top: 0px;
+    }
+    .main-container .bottom-content div.table div.table-row {
+        height: 15px;
+    }
+}
