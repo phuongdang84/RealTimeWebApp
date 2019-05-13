@@ -8,3 +8,4 @@ D:\Github\COMP1108\RealTimeWebApp\Application\obj\Debug\netcoreapp2.0\Applicatio
 D:\Github\COMP1108\RealTimeWebApp\Application\obj\Debug\netcoreapp2.0\Application.AssemblyInfo.cs
 D:\Github\COMP1108\RealTimeWebApp\Application\obj\Debug\netcoreapp2.0\Application.dll
 D:\Github\COMP1108\RealTimeWebApp\Application\obj\Debug\netcoreapp2.0\Application.pdb
+D:\Github\COMP1108\RealTimeWebApp\Application\obj\Debug\netcoreapp2.0\Application.csprojAssemblyReference.cache

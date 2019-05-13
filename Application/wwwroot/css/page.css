@@ -418,8 +418,8 @@ form .main-container {
 
 
     .main-container .main-content .buttons {
-        position: absolute;
-        bottom: 5px;
+        position: relative;
+        margin-top: 300px;
         display: flex;
         width: 100%;
         text-align: center;
