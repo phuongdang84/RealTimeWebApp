@@ -1,0 +1,95 @@
+﻿@page
+@model AboutModel
+@{
+    ViewData["Title"] = "About";
+}
+
+<div class="bar bar-header bar-dark">
+    <div class="button-content pull-left">
+        <button class="button button-clear" id="btn-logout">
+            <img src="./img/change-person.png" class="icon" />
+        </button>
+    </div>
+    <div class="button-content pull-right">
+        <button class="button button-clear" onclick="location.href='Index'">
+            <img src="./img/close.png" class="icon" />
+        </button>
+    </div>
+</div>
+<div class="main-container">
+    <div class="top-content user-info-content">
+        <img src="./img/account.png" class="avatar" />
+        <p class="avatar-label">Phuong Dang</p>
+        <p class="avatar-title">
+            A healthy 37 years old man resting heart rate between
+            70 bpm and 74 bpm is average
+        </p>
+    </div>
+    <div class="bottom-content">
+        <!-- Data table -->
+        <div class="table">
+            <div class="table-body">
+                <div class="table-row">
+                    <div class="td col-1">
+                        <div class="row-title">
+                            <span class="title label">Fullname</span>
+                        </div>
+                    </div>
+                    <div class="td col-2">
+                        <div class="row-title">
+                            <span class="title">Phuong Dang</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="td col-1">
+                        <div class="row-title">
+                            <span class="title label">Day of birth</span>
+                        </div>
+                    </div>
+                    <div class="td col-2">
+                        <div class="row-title">
+                            <span class="title">November,06 1984</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="td col-1">
+                        <div class="row-title label">
+                            <span class="title label">Emergency phone</span>
+                        </div>
+                    </div>
+                    <div class="td col-2">
+                        <div class="row-title">
+                            <span class="title">+84909090909</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="td col-1">
+                        <div class="row-title">
+                            <span class="title label">Emergency Email</span>
+                        </div>
+                    </div>
+                    <div class="td col-2">
+                        <div class="row-title">
+                            <span class="title">phuongdang@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="td col-1">
+                        <div class="row-title">
+                            <span class="title label">Location</span>
+                        </div>
+                    </div>
+                    <div class="td col-2">
+                        <div class="row-title">
+                            <span class="title">Tan Binh District, Ho Chi Minh City, Vietnam</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

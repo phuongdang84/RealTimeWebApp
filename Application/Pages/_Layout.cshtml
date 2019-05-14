@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Smart garden</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" type="text/css" href="css/page.css" />
+        <link rel="stylesheet" type="text/css" href="css/ionic.css" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="~/css/ionic.css"
+              asp-fallback-href="~/css/ionic.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" href="~/css/page.css" asp-append-version="true" />
+    </environment>
+</head>
+<body>
+    
+    @RenderBody()
+     
+
+    <environment include="Development">
+        <script src="~/js/jquery.js"></script>
+        <script src="~/js/circleChart.js"></script>
+        <script src="~/js/lineChart.js"></script>
+        <script src="~/lib/Chart.js-2.8.0/utils.js"></script> 
+        <script src="~/lib/Chart.js-2.8.0//dist/Chart.min.js"></script>
+        <script src="~/js/main.js" asp-append-version="true"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
+                asp-fallback-src="~/js/jquery.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
+        </script> 
+        <script src="~/js/main.js" asp-append-version="true"></script>
+    </environment>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
