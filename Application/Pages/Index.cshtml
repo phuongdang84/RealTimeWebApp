@@ -14,53 +14,48 @@
     </div>
 </div>
 <div class="main-container">
-    <div class="header-content">
+    <div class="header-content" data-bind="foreach: lineChartData">
         <div class="header-info">
-            <img src="./img/signal-100.png" class="icon" id="signal" />
-            <p class="label">Air moisture</p>
+            <span class="label temperator-info" id="temp-level" data-bind +="text: LiquidHum">23</span>
+            <p class="label humidity">Humidity (%)</p>
         </div>
-        <!--
-        <div class="header-info">
-            <div class="circleChart icon-large" id="chart"></div>
-        </div>
-        -->
-        <div class="header-info">
-            <span class="label temperator-info" id="temp-level">23</span>
+        <div class="header-info temperator-info">
+            <span class="label temperator-info" id="temp-level" data-bind="text: LiquidTemp">23</span>
             <img src="./img/temperator.png" class="icon temperator" />
         </div>
     </div>
     <div class="main-content">
 
         <!--Chart.js Canvas Tag -->
-        <canvas id="canvas"></canvas>
+        @*<canvas id="canvas"></canvas>*@
 
+        <div class="col-lg-12 bigChart" data-bind="lineChart: lineChartData"></div>
 
         <!-- Soil moisture -->
-        <div class="circleChart progress-cycle" id="progress-cycle"> 
+        <div class="circleChart progress-cycle" id="progress-cycle">
         </div>
         <div class="buttons">
             <div class="button-content">
                 <button type="button" onclick=" CheckHeart()">
                     <img src="./img/moisture.png" class="icon" />
-                </button>
-                <p class="">Power</p>
+                </button> 
             </div>
             <div class="button-content">
                 <button type="button" onclick=" Reset()">
                     <img src="./img/setting.png" class="icon" />
-                </button>
-                <p class="">Setting</p>
+                </button> 
             </div>
         </div>
         <!-- <div id='buttons'>
-                <button class='rhythmChange' value='NSR'>NSR</button>
-                <button class='rhythmChange' value='vTach'>vTach</button>
-                <button class='rhythmChange' value='vFib'>vFib</button>
-                <button class='rhythmChange' value='asystole'>asystole</button>
-                <div>
-                    -->
+            <button class='rhythmChange' value='NSR'>NSR</button>
+            <button class='rhythmChange' value='vTach'>vTach</button>
+            <button class='rhythmChange' value='vFib'>vFib</button>
+            <button class='rhythmChange' value='asystole'>asystole</button>
+            <div>
+                -->
     </div>
-    <div class="footer-content">
+
+    @*<div class="footer-content">
         <button type="button" id="btn-voice" class="btn-voice">
             <img src="./img/micro.png" class="icon" />
         </button>
@@ -68,7 +63,7 @@
             <p class="title">What do you want?</p>
             <p class="sub-title">For example, say "Watering"</p>
         </div>
-    </div>
+    </div>*@
     <div class="bottom-content-button">
         <button type="button" id="button-bottom" class="btn-bottom" onclick="location.href='History';">
             <img src="./img/history.png">
@@ -78,6 +73,8 @@
 
 @section Scripts {
 
+    <script src="~/lib/chart-data/data-view-model.js"></script>
+    <script src="~/lib/chart-data/line-chart-binding.js"></script>
     <script type="text/javascript" charset="utf-8">
 
         // Get value from APis
@@ -86,7 +83,7 @@
         /////////////////////////////
 
         // circle chart Soil moisture
-        $("#progress-cycle").circleChart({
+      $("#progress-cycle").circleChart({
             color: "#00FFFF",
             backgroundColor: "#e6e6e6",
             size: 250,
@@ -111,38 +108,57 @@
                     circle.text("<p class='high'>" + Math.round(circle.value) + "%</p><p class='sub-title high'>Soil moisture</p>");
                 }
             }
-        });
+        }); 
 
         ////////////////////////////
         setInterval(function () {
 
             // signal connection
-            var icon = Math.floor(Math.random() * 4);
-            document.getElementById("signal").src = "./img/signal-100.png";
+            //var icon = Math.floor(Math.random() * 4);
+            //document.getElementById("signal").src = "./img/signal-100.png";
 
-            if (icon == 0) {
-                document.getElementById("signal").src = "./img/signal-25.png";
-            } else if (icon == 1) {
-                document.getElementById("signal").src = "./img/signal-50.png";
-            } else if (icon == 2) {
-                document.getElementById("signal").src = "./img/signal-75.png";
-            } else {
-                document.getElementById("signal").src = "./img/signal-100.png";
-            }
+            //if (icon == 0) {
+            //    document.getElementById("signal").src = "./img/signal-25.png";
+            //} else if (icon == 1) {
+            //    document.getElementById("signal").src = "./img/signal-50.png";
+            //} else if (icon == 2) {
+            //    document.getElementById("signal").src = "./img/signal-75.png";
+            //} else {
+            //    document.getElementById("signal").src = "./img/signal-100.png";
+            //}
 
             // heart beat number
-            var ranNum = Math.floor(23 + Math.random() * 10);
-            document.getElementById("temp-level").innerHTML = ranNum + "";
+        //    var ranNum = Math.floor(23 + Math.random() * 10);
+        //    document.getElementById("temp-level").innerHTML = ranNum + "";
         }, 2000);
-
-        function CheckHeart() {
-            $("#progress-cycle").circleChart({
-                value: 90,
-                speed: 10000
-            });
-        } 
+        
 
         /////////////////////////////
+         
+        var D3KD = this.D3KD || {};
+
+        (function () {
+            "use strict";
+            var dataViewModel = new D3KD.dataViewModel();
+
+            var protocol = location.protocol === "https:" ? "wss:" : "ws:";
+            var wsUri = protocol + "//localhost:1088/";
+            var socket = new WebSocket(wsUri);
+
+            socket.onmessage = function (e) {
+                var reading = JSON.parse(e.data);
+                reading.Date = new Date(reading.Date);
+
+              //  document.getElementById("temp-level").innerHTML = reading.LiquidTemp + "";
+
+                dataViewModel.addDataPoint(reading);
+            };
+
+            ko.applyBindings(dataViewModel);
+
+        }());
+
+        /*
         var lineChartData = {
             labels: ['MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT', 'SUN'],
             datasets: [{
@@ -211,6 +227,6 @@
                 }
             });
         };
-
+        */
     </script>
 }

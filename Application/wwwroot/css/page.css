@@ -29,10 +29,10 @@ body {
     /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;
     /* prevent copy paste, to allow, change 'none' to 'text' */
-    background-color:#074C00;
-    background-image:linear-gradient(bottom, #074C00, #6ed46e, #3eb0f7);
-    background-image:-webkit-linear-gradient(bottom,  #074C00, #6ed46e, #3eb0f7);
-    background-image:-ms-linear-gradient(bottom, #074C00, #6ed46e, #3eb0f7);
+    background-color: #074C00;
+    background-image: linear-gradient(bottom, #074C00, #6ed46e, #3eb0f7);
+    background-image: -webkit-linear-gradient(bottom, #074C00, #6ed46e, #3eb0f7);
+    background-image: -ms-linear-gradient(bottom, #074C00, #6ed46e, #3eb0f7);
     background-attachment: fixed;
     font-family: 'GEOMANIST-REGULAR', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size: 12px;
@@ -52,34 +52,34 @@ body {
     height: 60px;
 }
 
-.bar .title {
-    position: absolute;
-    font-size: 25px;
-    font-weight: 400;
-    font-family: 'GEOMANIST-LIGHT';
-    top: 10px !important;
-    margin-left: 10px;
-    padding: 0px;
-    overflow: visible;
-    text-align: left !important;
-}
+    .bar .title {
+        position: absolute;
+        font-size: 25px;
+        font-weight: 400;
+        font-family: 'GEOMANIST-LIGHT';
+        top: 10px !important;
+        margin-left: 10px;
+        padding: 0px;
+        overflow: visible;
+        text-align: left !important;
+    }
 
-.bar .button-content {
-    top: 5px !important;
-    font-size: 15px;
-    line-height: 40px;
-    height: 50px;
-    color: #8f8f8f;
-    justify-content: center;
-    vertical-align: middle;
-}
+    .bar .button-content {
+        top: 5px !important;
+        font-size: 15px;
+        line-height: 40px;
+        height: 50px;
+        color: #8f8f8f;
+        justify-content: center;
+        vertical-align: middle;
+    }
 
-.bar .button-content span{
-    height: 40px;
-    vertical-align: middle;
-    margin-top: 15px;
-    font-size: 17px; 
-}
+        .bar .button-content span {
+            height: 40px;
+            vertical-align: middle;
+            margin-top: 15px;
+            font-size: 17px;
+        }
 
 .pull-left {
     position: absolute;
@@ -102,9 +102,9 @@ body {
     color: #00FFFF;
 }
 
-.bar .button-content .button.button-clear:last-child {
-    margin: 0 0 10px 0;
-}
+    .bar .button-content .button.button-clear:last-child {
+        margin: 0 0 10px 0;
+    }
 
 .bar .button-content .button .icon {
     height: 40px;
@@ -124,59 +124,59 @@ body {
     overflow-x: hidden;
 }
 
-.main-container .head-content {
-    width: 100%;
-    padding: 15px 10px;
-    /* margin: 0 0 15px 0; */
-    text-align: center;
-    border-bottom: 1px solid #8d8d8d;
-}
+    .main-container .head-content {
+        width: 100%;
+        padding: 15px 10px;
+        /* margin: 0 0 15px 0; */
+        text-align: center;
+        border-bottom: 1px solid #8d8d8d;
+    }
 
-.main-container .head-content a.button {
-    display: block;
-    height: 20px;
-    width: 20px;
-    background: #1a2333;
-    padding: 2px;
-    text-align: center;
-    border-radius: 3px;
-    color: #fff;
-    font-size: 35px
-}
+        .main-container .head-content a.button {
+            display: block;
+            height: 20px;
+            width: 20px;
+            background: #1a2333;
+            padding: 2px;
+            text-align: center;
+            border-radius: 3px;
+            color: #fff;
+            font-size: 35px
+        }
 
-.main-container .head-content .search-bar {
-    display: flex;
-    right: 0px;
-}
+        .main-container .head-content .search-bar {
+            display: flex;
+            right: 0px;
+        }
 
-.main-container .head-content .search-bar input {
-    position: relative;
-    background-color: #ffffff;
-    padding: 2px 2px 2px 10px;
-    height: 45px;
-    width: 100%;
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
-}
+            .main-container .head-content .search-bar input {
+                position: relative;
+                background-color: #ffffff;
+                padding: 2px 2px 2px 10px;
+                height: 45px;
+                width: 100%;
+                border-top-left-radius: 3px;
+                border-bottom-left-radius: 3px;
+            }
 
-.main-container .head-content .search-bar .btn-search {
-    position: relative;
-    background-color: #5c5c5c;
-    height: 45px;
-    padding: 5px 10px;
-    text-align: center;
-    color: #fff;
-    font-size: 14px;
-    border: 1px solid #fff;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
-}
+            .main-container .head-content .search-bar .btn-search {
+                position: relative;
+                background-color: #5c5c5c;
+                height: 45px;
+                padding: 5px 10px;
+                text-align: center;
+                color: #fff;
+                font-size: 14px;
+                border: 1px solid #fff;
+                border-top-right-radius: 3px;
+                border-bottom-right-radius: 3px;
+            }
 
-.main-container .head-content .search-bar .btn-search .icon {
-    margin: 5px;
-    height: 20px;
-    width: 20px;
-}
+                .main-container .head-content .search-bar .btn-search .icon {
+                    margin: 5px;
+                    height: 20px;
+                    width: 20px;
+                }
 
 form .main-container {
     position: relative;
@@ -195,42 +195,49 @@ form .main-container {
 
 .main-container .header-content {
     display: inline-flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     /*background-color: #575757;*/
     background-color: transparent;
     width: 100%;
+    margin: 0 17px;
     margin-top: 1%;
-    padding: 7px 30px; 
+    padding: 7px 30px;
 }
 
-.main-container .header-content .header-info {
-    text-align: center;
-    justify-content: center;
-    vertical-align: middle;
-    width: 30%;
-    font-size: 15px;
-}
+    .main-container .header-content .header-info {
+        text-align: center;
+        justify-content: center;
+        vertical-align: middle;
+        width: 30%;
+        font-size: 25px;
+    }
 
-.main-container .header-content .header-info span.temperator-info{
-    font-size: 50px;
-}
+        .main-container .header-content .header-info.temperator-info {
+            display: flex;
+            /*margin-top: 10px;*/
+        }
 
-.main-container .header-content .header-info .icon {
-    width: 25px;
-    height: 25px;
-    margin-top: 3px;
-}
+        .main-container .header-content .header-info span.temperator-info {
+            font-size: 40px;
+        }
 
-.main-container .header-content .header-info .icon.temperator {  
-    width: 30px;
-    height: 30px;
-    margin-top: 10px;
-}
+        .main-container .header-content .header-info .icon {
+            width: 25px;
+            height: 25px;
+            margin-top: 3px;
+        }
 
-.main-container .header-content .header-info .icon.heart {
-    animation: beat .25s infinite alternate;
-    transform-origin: center;
-}
+            .main-container .header-content .header-info .icon.temperator {
+                width: 30px;
+                height: 30px;
+                margin-top: -5px;
+                margin-left: -10px;
+            }
+
+            .main-container .header-content .header-info .icon.heart {
+                animation: beat .25s infinite alternate;
+                transform-origin: center;
+            }
 
 /* Heart beat animation */
 
@@ -248,16 +255,16 @@ form .main-container {
     text-align: center;
 }
 
-.main-container .header-content .header-info .icon-large canvas {
-    position: relative;
-    left: 30%;
-}
+    .main-container .header-content .header-info .icon-large canvas {
+        position: relative;
+        left: 30%;
+    }
 
-.main-container .header-content .header-info .icon-large p {
-    left: 63%;
-    color: #ffffff;
-    font-family: 'GEOMANIST-LIGHT' !important;
-}
+    .main-container .header-content .header-info .icon-large p {
+        left: 63%;
+        color: #ffffff;
+        font-family: 'GEOMANIST-LIGHT' !important;
+    }
 
 .main-container .header-content .header-info .label {
     text-align: center;
@@ -267,54 +274,55 @@ form .main-container {
     color: #ffffff;
     margin: 0;
 }
+    .main-container .header-content .header-info .label.humidity{
+        display:block
+    }
+    /*************Footer content**************/
+    .main-container .footer-content {
+        position: fixed;
+        display: inline-flex;
+        background-color: #ffffff;
+        height: 45px;
+        left: 0;
+        bottom: 0;
+        text-align: center;
+        justify-content: center;
+        vertical-align: center;
+    }
 
-/*************Footer content**************/
+    .main-container .footer-content .btn-voice {
+        width: 30px;
+        height: 30px;
+        margin: 5px 5px 0 0;
+        padding: 2px;
+        background: transparent;
+        border: none;
+        border-radius: 50%;
+    }
 
-.main-container .footer-content {
-    position: fixed;
-    display: inline-flex;
-    background-color: #ffffff;
-    height: 45px;
-    left: 0;
-    bottom: 0;
-    text-align: center;
-    justify-content: center;
-    vertical-align: center;
-}
+        .main-container .footer-content .btn-voice .icon {
+            width: 30px;
+            height: 30px;
+            opacity: 0.7;
+        }
 
-.main-container .footer-content .btn-voice {
-    width: 30px;
-    height: 30px;
-    margin: 5px 5px 0 0;
-    padding: 2px;
-    background: transparent;
-    border: none;
-    border-radius: 50%;
-}
+    .main-container .footer-content .text-content {
+        margin: 5px 5px 5px 0;
+        text-align: left;
+        padding: 2px;
+    }
 
-.main-container .footer-content .btn-voice .icon {
-    width: 30px;
-    height: 30px;
-    opacity: 0.7;
-}
+        .main-container .footer-content .text-content p {
+            margin: 0;
+            color: #8f8f8f;
+            font-size: 12px;
+            line-height: 16px
+        }
 
-.main-container .footer-content .text-content {
-    margin: 5px 5px 5px 0;
-    text-align: left;
-    padding: 2px;
-}
-
-.main-container .footer-content .text-content p {
-    margin: 0;
-    color: #8f8f8f;
-    font-size: 12px;
-    line-height: 16px
-}
-
-.main-container .footer-content .text-content p.title {
-    font-size: 15px;
-    color: #000;
-}
+            .main-container .footer-content .text-content p.title {
+                font-size: 15px;
+                color: #000;
+            }
 
 /*************Main content**************/
 
@@ -327,26 +335,73 @@ form .main-container {
     vertical-align: center;
 }
 
-.main-container .main-content canvas#canvas {
-    position: relative;
-    background-color: #ffffff;
-    top: 0px;
-    left: 0px;
-    margin: 10px 0;
-    width: 100%;
-    height: 200px;
+    .main-container .main-content canvas#canvas {
+        position: relative;
+        background-color: #ffffff;
+        top: 0px;
+        left: 0px;
+        margin: 10px 0;
+        width: 100%;
+        height: 200px;
+    }
+
+    .main-container .main-content canvas#barChart {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 200px;
+        background-color: #ffffff;
+        /*   Check out the fancy shadow  on this one */
+        box-shadow: 0 3rem 5rem -2rem rgba(0, 0, 0, 0.6);
+    }
+
+
+
+    .main-container .main-content .bigChart {
+        display: block;
+        margin: 5px 0;
+        height: 300px;
+    }
+
+        .main-container .main-content .bigChart svg {
+            width: 100%;
+            /* height: 300px; */
+            margin-left: -40px;
+        }
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
 }
 
-.main-container .main-content canvas#barChart{
-    position: relative;
-    top: 0px;
-    left: 0px;
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
     width: 100%;
-    height: 200px;
-    background-color: #ffffff;
-  /*   Check out the fancy shadow  on this one */
-    box-shadow: 0 3rem 5rem -2rem rgba(0, 0, 0, 0.6);
-  }
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+.line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
 
 .main-container .main-content button#buttons {
     position: absolute;
@@ -358,101 +413,101 @@ form .main-container {
 }
 
 .main-container .main-content .circleChart {
-    display: block;
-    width: 100%; 
+    display: flex;
+    width: 100%;
     margin: 0 calc(50% - 125px);
-    margin-bottom: 200px;
+    margin-top: 300px;
     justify-content: center;
     text-align: center;
     left: 0;
 }
 
-.main-container .main-content .circleChart canvas {
-    left: 0;    
-}
+    .main-container .main-content .circleChart canvas {
+        left: 0;
+    }
 
-.main-container .main-content .circleChart p {
-    width: 250px !important;
-    top: 100px !important;
-    left: 0;
-    color: #ffffff;
-    font-size: 65px;
-    font-weight: 600;
-    line-height: 50px !important;
-    font-family: 'GEOMANIST-LIGHT' !important;
-}
+    .main-container .main-content .circleChart p {
+        width: 250px !important;
+        top: 100px !important;
+        left: 0;
+        color: #ffffff;
+        font-size: 65px;
+        font-weight: 600;
+        line-height: 50px !important;
+        font-family: 'GEOMANIST-LIGHT' !important;
+    }
 
-.main-container .main-content .circleChart p.sub-title{ 
-    color: #dbdbdb;
-    font-size: 20px;
-    margin-top: -20px;
-}
+        .main-container .main-content .circleChart p.sub-title {
+            color: #dbdbdb;
+            font-size: 20px;
+            margin-top: -20px;
+        }
 
-.main-container .main-content .circleChart p.alarm,
-.main-container .main-content .circleChart p.sub-title.alarm{ 
-    color: #fd2525;
-}
+            .main-container .main-content .circleChart p.alarm,
+            .main-container .main-content .circleChart p.sub-title.alarm {
+                color: #fd2525;
+            }
 
-.main-container .main-content .circleChart p.warning,
-.main-container .main-content .circleChart p.sub-title.warning{ 
-    color: #fd7c26;
-}
+            .main-container .main-content .circleChart p.warning,
+            .main-container .main-content .circleChart p.sub-title.warning {
+                color: #fd7c26;
+            }
 
-.main-container .main-content .circleChart p.avarage,
-.main-container .main-content .circleChart p.sub-title.average{ 
-    color: #53e5ff;
-}
+            .main-container .main-content .circleChart p.avarage,
+            .main-container .main-content .circleChart p.sub-title.average {
+                color: #53e5ff;
+            }
 
-.main-container .main-content .circleChart p.high,
-.main-container .main-content .circleChart p.sub-title.high{ 
-    color: #00FFFF; 
-}
-
-
-.main-container .main-content .circleChart .icon {
-    position: relative;
-    height: 65px;
-    width: 70px;  
-    z-index: 99; 
-}
+            .main-container .main-content .circleChart p.high,
+            .main-container .main-content .circleChart p.sub-title.high {
+                color: #00FFFF;
+            }
 
 
-    .main-container .main-content .buttons {
+    .main-container .main-content .circleChart .icon {
         position: relative;
-        margin-top: 300px;
-        display: flex;
+        height: 65px;
+        width: 70px;
+        z-index: 99;
+    }
+
+
+.main-container .main-content .buttons {
+    position: relative;
+    margin-top: 150px;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+    .main-container .main-content .buttons .button-content {
+        position: relative;
+        display: block;
         width: 100%;
         text-align: center;
         justify-content: center;
     }
 
-.main-container .main-content .buttons .button-content{
-    position: relative;
-    display: block;
-    width: 100%; 
-    text-align: center;
-    justify-content: center; 
-}
+        .main-container .main-content .buttons .button-content button {
+            background-color: transparent;
+            width: 80px;
+            height: 80px;
+            padding: 7px 5px 5px 5px;
+            border: 1px solid #00FFFF;
+            border-radius: 50%;
+        }
 
-.main-container .main-content .buttons .button-content button{
-    background-color: transparent;
-    width: 80px;
-    height: 80px;
-    padding: 7px 5px 5px 5px;
-    border: 1px solid #00FFFF;
-    border-radius: 50%;
-}
+            .main-container .main-content .buttons .button-content button img {
+                width: 40px;
+                height: 40px;
+            }
 
-.main-container .main-content .buttons .button-content button img{
-    width: 40px;
-    height: 40px; 
-}
-
-.main-container .main-content .buttons .button-content p{
-    font-size: 20px;
-    margin: 5px;
-    color: #cbcbcb;
-}
+        .main-container .main-content .buttons .button-content p {
+            font-size: 20px;
+            margin: 5px;
+            color: #cbcbcb;
+        }
 
 
 /*************Top content**************/
@@ -501,13 +556,13 @@ form .main-container {
     vertical-align: center;
 }
 
-.main-container .bottom-content div.table {
-    height: 100%;
-}
+    .main-container .bottom-content div.table {
+        height: 100%;
+    }
 
-.main-container .bottom-content div.table div.table-row {
-    height: 60px;
-}
+        .main-container .bottom-content div.table div.table-row {
+            height: 60px;
+        }
 
 /*************Device history button**************/
 
@@ -518,21 +573,21 @@ form .main-container {
     text-align: left;
 }
 
-.main-container .bottom-content-button .btn-bottom {
-    display: block;
-    height: 150px;
-    width: 150px;
-    margin: 0 0 -75px -75px;
-    background: #353535;
-    border: solid 2px #00FFFF;
-    border-radius: 50%;
-    padding: 0 0 50px 50px
-}
+    .main-container .bottom-content-button .btn-bottom {
+        display: block;
+        height: 150px;
+        width: 150px;
+        margin: 0 0 -75px -75px;
+        background: #353535;
+        border: solid 2px #00FFFF;
+        border-radius: 50%;
+        padding: 0 0 50px 50px
+    }
 
-.main-container .bottom-content-button .btn-bottom img {
-    height: 30px;
-    width: 30px;
-}
+        .main-container .bottom-content-button .btn-bottom img {
+            height: 30px;
+            width: 30px;
+        }
 
 canvas {
     border: 1px solid black;
@@ -548,59 +603,59 @@ canvas {
     margin: 5px 5px 15px 5px;
 }
 
-.input-content label {
-    width: 100%;
-    text-align: left;
-    padding: 0px;
-    margin: 0px;
-}
+    .input-content label {
+        width: 100%;
+        text-align: left;
+        padding: 0px;
+        margin: 0px;
+    }
 
-.input-content p.input-error {
-    float: left;
-    margin: 5px 2px 10px 2px;
-    color: rgb(255, 153, 0);
-    font-size: 12px;
-    line-height: 15px
-}
+    .input-content p.input-error {
+        float: left;
+        margin: 5px 2px 10px 2px;
+        color: rgb(255, 153, 0);
+        font-size: 12px;
+        line-height: 15px
+    }
 
-.input-content input.input-text, .input-content select.select-text, .input-content textarea.input-text {
-    width: 100%;
-    height: 40px;
-    padding: 5px 5px 5px 10px;
-    margin: 0;
-    border-radius: 3px;
-    border: none;
-}
+    .input-content input.input-text, .input-content select.select-text, .input-content textarea.input-text {
+        width: 100%;
+        height: 40px;
+        padding: 5px 5px 5px 10px;
+        margin: 0;
+        border-radius: 3px;
+        border: none;
+    }
 
-.input-content input[type=button], .input-content button.button-insert {
-    height: 50px;
-    width: calc(100% - 20px);
-    margin: 15px 5px 5px;
-    padding: 5px;
-    border: 1px solid #dddddd;
-    border-radius: 5px;
-    cursor: pointer;
-}
+    .input-content input[type=button], .input-content button.button-insert {
+        height: 50px;
+        width: calc(100% - 20px);
+        margin: 15px 5px 5px;
+        padding: 5px;
+        border: 1px solid #dddddd;
+        border-radius: 5px;
+        cursor: pointer;
+    }
 
-.input-content h3 {
-    text-transform: uppercase;
-    font-weight: normal;
-    margin: 10px 0;
-    overflow: visible;
-    padding: 0px;
-    text-align: center;
-    color: #ffffff;
-}
+    .input-content h3 {
+        text-transform: uppercase;
+        font-weight: normal;
+        margin: 10px 0;
+        overflow: visible;
+        padding: 0px;
+        text-align: center;
+        color: #ffffff;
+    }
 
-.input-content a {
-    font-size: 15px;
-    font-weight: normal;
-    color: #fff;
-    margin: 0;
-    overflow: visible;
-    padding: 0px;
-    text-align: center;
-}
+    .input-content a {
+        font-size: 15px;
+        font-weight: normal;
+        color: #fff;
+        margin: 0;
+        overflow: visible;
+        padding: 0px;
+        text-align: center;
+    }
 
 /*table content*/
 
@@ -612,18 +667,18 @@ div.table {
     overflow-y: scroll;
 }
 
-div.table .table-body {
-    width: 100%;
-}
+    div.table .table-body {
+        width: 100%;
+    }
 
-div.table div.table-row {
-    display: inline-table;
-    width: 100%;
-    height: 70px;
-    padding: 5px;
-}
+    div.table div.table-row {
+        display: inline-table;
+        width: 100%;
+        height: 70px;
+        padding: 5px;
+    }
 
-/*
+        /*
 div.table div.table-row:first-child {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
@@ -636,132 +691,141 @@ div.table div.table-row:last-child {
 
 */
 
-div.table div.table-row a.table-row-btn {
-    display: block;
-    text-decoration: none;
-}
+        div.table div.table-row a.table-row-btn {
+            display: block;
+            text-decoration: none;
+        }
 
-div.table div.table-row div.th {
-    display: table-cell;
-    background: #b9b9b9;
-    padding: 7px 13px;
-    color: #fff;
-}
+        div.table div.table-row div.th {
+            display: table-cell;
+            background: #b9b9b9;
+            padding: 7px 13px;
+            color: #fff;
+        }
 
-div.table div.table-row div.td {
-    display: table-cell;
-    padding: 0px;
-}
+        div.table div.table-row div.td {
+            display: table-cell;
+            padding: 0px;
+        }
 
-div.table div.table-row div.td.col-1 {
-    text-align: left;
-    padding: 5px 10px;
-}
+            div.table div.table-row div.td.col-1 {
+                text-align: left;
+                padding: 5px 10px;
+            }
 
-div.table div.table-row .col-1 .row-title span.title {
-    font-size: 22px;
-    color: #000;
-}
+        div.table div.table-row .col-1 .row-title span.title {
+            font-size: 22px;
+            color: #000;
+        }
 
-div.table div.table-row .col-1 .row-title span.label.title {
-    font-size: 15px;
-    color: #828282
-}
+        div.table div.table-row .col-1 .row-title span.label.title {
+            font-size: 15px;
+            color: #828282
+        }
 
-div.table div.table-row .col-1 .row-title .icon-date {
-    margin-left: 15px;
-    font-size: 15px;
-    color: #a1a1a1;
-}
+        div.table div.table-row .col-1 .row-title .icon-date {
+            margin-left: 15px;
+            font-size: 15px;
+            color: #a1a1a1;
+        }
 
-div.table div.table-row .col-1 .row-title .sub-title {
-    margin-left: 5px;
-    font-size: 15px;
-    font-style: italic;
-    color: #a1a1a1;
-}
+        div.table div.table-row .col-1 .row-title .sub-title {
+            margin-left: 5px;
+            font-size: 15px;
+            font-style: italic;
+            color: #a1a1a1;
+        }
 
-div.table div.table-row .col-1 .row-info {
-    margin-top: 10px;
-    font-size: 15px;
-    color: #a1a1a1;
-}
+        div.table div.table-row .col-1 .row-info {
+            margin-top: 10px;
+            font-size: 15px;
+            color: #a1a1a1;
+        }
 
-div.table div.table-row .col-1 .row-info-1 {
-    margin-top: 0px;
-    font-size: 13px;
-    color: #a1a1a1;
-}
+        div.table div.table-row .col-1 .row-info-1 {
+            margin-top: 0px;
+            font-size: 13px;
+            color: #a1a1a1;
+        }
 
-div.table div.table-row .col-1 .row-info span, div.table div.table-row .col-1 .row-info-1 span {
-    padding-right: 10px;
-    margin-right: 5px;
-    border-right: 1px solid #a1a1a1;
-}
+            div.table div.table-row .col-1 .row-info span, div.table div.table-row .col-1 .row-info-1 span {
+                padding-right: 10px;
+                margin-right: 5px;
+                border-right: 1px solid #a1a1a1;
+            }
 
-div.table div.table-row .col-1 .row-info span:last-child, div.table div.table-row .col-1 .row-info-1 span:last-child {
-    border: none;
-}
+                div.table div.table-row .col-1 .row-info span:last-child, div.table div.table-row .col-1 .row-info-1 span:last-child {
+                    border: none;
+                }
 
-div.table div.table-row div.td.col-2 {
-    vertical-align: middle;
-    text-align: right;
-    padding: 0;
-}
+        div.table div.table-row div.td.col-2 {
+            vertical-align: middle;
+            text-align: right;
+            padding: 0;
+        }
 
-div.table div.table-row .col-2 .btn-delete {
-    position: relative;
-    background: transparent;
-    float: right;
-    text-align: center;
-    right: 0px;
-    padding: 5px;
-    height: 100%;
-    width: 60px;
-    color: #ff3d3d;
-    font-size: 13px;
-    border: none;
-    border-left: 1px solid #dadada;
-}
+        div.table div.table-row .col-2 .btn-delete {
+            position: relative;
+            background: transparent;
+            float: right;
+            text-align: center;
+            right: 0px;
+            padding: 5px;
+            height: 100%;
+            width: 60px;
+            color: #ff3d3d;
+            font-size: 13px;
+            border: none;
+            border-left: 1px solid #dadada;
+        }
 
-div.table div.table-row .col-2 .btn-detail {
-    position: relative;
-    display: block;
-    float: right;
-    text-align: right;
-    right: 20px;
-    padding: 15px 5px;
-    height: 50px;
-    width: 50px;
-    color: #c7c7c7;
-    font-size: 20px;
-    text-decoration: none;
-    border-left: 1.5px solid #cfcfcf;
-}
+        div.table div.table-row .col-2 .btn-detail {
+            position: relative;
+            display: block;
+            float: right;
+            text-align: right;
+            right: 20px;
+            padding: 15px 5px;
+            height: 50px;
+            width: 50px;
+            color: #c7c7c7;
+            font-size: 20px;
+            text-decoration: none;
+            border-left: 1.5px solid #cfcfcf;
+        }
 
-div.table div.table-row .col-2 .btn-delete img {
-    position: relative;
-    height: 35px;
-    width: 35px;
-    border-radius: 50%
-}
+        div.table div.table-row .col-2 .btn-delete img {
+            position: relative;
+            height: 35px;
+            width: 35px;
+            border-radius: 50%
+        }
 
-div.table div.table-row .col-2 .row-title {
-    margin-right: 5px;
-}
+        div.table div.table-row .col-2 .row-title {
+            margin-right: 5px;
+        }
 
-div.table div.table-body div.table-row {
-    background: #eeeeee;
-}
+    div.table div.table-body div.table-row {
+        background: #eeeeee;
+    }
 
-div.table div.table-body div.table-row:nth-child(2n+1) {
-    background: #ffffff;
-}
+        div.table div.table-body div.table-row:nth-child(2n+1) {
+            background: #ffffff;
+        }
 
-div.table div.table-row.header {
-    display: table-header-group;
-}
+    div.table div.table-row.header {
+        display: table-header-group;
+    }
 
+@media (max-width: 415px) {
+    .main-container .main-content .circleChart {
+        margin-top: 30px;
+    }
+
+    .main-container .main-content .buttons {
+        margin-top: 245px;
+    }
+}
 /* Landscape layout (with min-width) */
 
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
@@ -825,7 +889,7 @@ div.table div.table-row.header {
 
 @media (max-height: 736px) {
     div.table, .main-container {
-        height: 646px;
+        height: 660px;
     }
 }
 
@@ -875,9 +939,11 @@ div.table div.table-row.header {
     div.table div.table-row {
         height: 50px;
     }
+
     .main-container .top-content img.avatar {
         margin-top: 5px;
     }
+
     .main-container .info-content p {
         margin-top: 5px;
     }
@@ -889,6 +955,7 @@ div.table div.table-row.header {
         height: 60px;
         width: 100%;
     }
+
     .main-container .top-content img.avatar {
         position: absolute;
         visibility: hidden;
@@ -896,12 +963,15 @@ div.table div.table-row.header {
         height: 0;
         top: -60%;
     }
+
     .main-container .user-info-content .avatar-label {
         margin: 0px 30px;
     }
+
     .main-container .user-info-content p {
         margin-top: 0px;
     }
+
     .main-container .bottom-content div.table div.table-row {
         height: 15px;
     }
